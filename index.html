@@ -6,6 +6,27 @@
   <title>SimpleSwap Reverse-Engineered Prototype & Architecture Inspector</title>
   <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
   <style>
+    :root {
+      --background: #0b1120;
+      --card: #1e293b;
+      --foreground: #f8fafc;
+      --muted-foreground: #94a3b8;
+      --border: #334155;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --background: #f1f5f9;
+        --card: #ffffff;
+        --foreground: #0f172a;
+        --muted-foreground: #64748b;
+        --border: #e2e8f0;
+      }
+    }
+    body {
+      background-color: var(--background);
+      color: var(--foreground);
+      min-height: 100vh;
+    }
     @keyframes pulse-slow {
       0%, 100% { opacity: 1; }
       50% { opacity: 0.4; }
